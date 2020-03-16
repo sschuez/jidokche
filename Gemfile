@@ -19,6 +19,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
 gem 'faker'
+gem 'rename'
 
 # Rails Admin
 gem 'remotipart', github: 'mshibuya/remotipart'
