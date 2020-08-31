@@ -11,8 +11,7 @@ class InquiryMailer < ApplicationMailer
   def admin_notification
   	@inquiry = params[:inquiry]
   	mail(
-  		to: 'stephen.schuez@gmail.com',
-      to: 'cornelia.schuez@gmail.com',
+  		to: ['stephen.schuez@gmail.com', 'cornelia.schuez@gmail.com'],
   		subject: 'Neue Anfrage auf jidokche.com'
   		)
   end
