@@ -1,5 +1,6 @@
 class InquiriesController < ApplicationController
 	skip_before_action :authenticate_user!, only: [:new, :create]
+	
 	def index
 		@inquiries = Inquiry.all
 	end
@@ -46,6 +47,6 @@ class InquiriesController < ApplicationController
   private
 
   def inquiry_params
-    params.require(:inquiry).permit(:email, :newspaper, :other_newspaper, :desired_date)
+    params.require(:inquiry).permit(:email, :subject, :name, :content)
   end
 end
