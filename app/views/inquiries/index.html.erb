@@ -1,20 +1,42 @@
 <div class="container">
+
+	<% if current_user.admin? %>
+
 		<% @inquiries.each do |inquiry| %>
-	<div class="d-flex flex-row bd-highlight mb-3">	
-		  
-			<div class="p-2 bd-highlight">
-		  	<p><%= inquiry.email %></p>
-		  </div>
-		  <div class="p-2 bd-highlight">
-		  	<p><%= inquiry.newspaper %></p>
+			<div class="d-flex flex-row bd-highlight mb-3">	
+				
+				<div class="p-2 bd-highlight">
+			  	<p><%= inquiry.email %></p>
+			  </div>
+
+			  <div class="p-2 bd-highlight">
+			  	<% if inquiry.name == nil %>
+			  		<p>Name n/a</p>
+			  	<% else %>
+			  		<p><%= inquiry.name %></p>
+			  	<% end %>
+				</div>
+
+			  <div class="p-2 bd-highlight">
+			  	<% if inquiry.subject == nil %>
+			  		<p>Subject n/a</p>
+			  	<% else %>
+			  		<p><%= inquiry.subject %></p>
+					<% end %>
+				</div>
+
+				<div class="p-2 bd-highlight">
+			  	<p><%= inquiry.content %></p>
+				</div>
+
 			</div>
-		  <div class="p-2 bd-highlight">
-		  	<p><%= inquiry.other_newspaper %></p>
-			</div>
-			<div class="p-2 bd-highlight">
-		  	<p><%= inquiry.desired_date %></p>
-			</div>
-	</div>
 		<% end %>
+
+	<% else %>
+		
+		<p>You have no access to this page</p>
+
+	<% end %>
+
 </div>
 

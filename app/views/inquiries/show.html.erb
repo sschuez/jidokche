@@ -1,28 +1,47 @@
 <div class="container">
-	<div class="d-flex flex-row bd-highlight mb-3">
-	  <div class="p-2 bd-highlight">
-	  	<h5>Created at</h5>
-	  	<p><%= @inquiry.created_at %></p>
-	  </div>
-	  <div class="p-2 bd-highlight ml-3">
-	  	<h5>Email</h5>
-	  	<p><%= @inquiry.email %></p>
-	  </div>
-	  <div class="p-2 bd-highlight ml-3">
-	  	<h5>Newspaper</h5>
-	  	<p><%= @inquiry.newspaper %></p>
+
+	<% if current_user.admin? %>
+	
+		<div class="d-flex flex-row bd-highlight mb-3">
+		  
+		  <div class="p-2 bd-highlight">
+		  	<h5>Created at</h5>
+		  	<p><%= @inquiry.created_at %></p>
+		  </div>
+
+		  <div class="p-2 bd-highlight ml-3">
+		  	<h5>Email</h5>
+		  	<p><%= @inquiry.email %></p>
+		  </div>
+
+		  <% if @inquiry.name != nil %>
+			  <div class="p-2 bd-highlight ml-3">
+			  	<h5>Name</h5>
+			  	<p><%= @inquiry.name %></p>
+				</div>
+			<% end %>
+
+			<% if @inquiry.subject != nil %>
+			  <div class="p-2 bd-highlight ml-3">
+			  	<h5>Betreff</h5>
+			  	<p><%= @inquiry.subject %></p>
+				</div>
+			<% end %>
+
+			<div class="p-2 bd-highlight ml-3">
+		  	<h5>Nachricht</h5>
+		  	<p><%= @inquiry.content %></p>
+			</div>
+			
 		</div>
-	  <div class="p-2 bd-highlight ml-3">
-	  	<h5>Other Newspaper</h5>
-	  	<p><%= @inquiry.other_newspaper %></p>
-		</div>
-		<div class="p-2 bd-highlight ml-3">
-	  	<h5>Desired Date</h5>
-	  	<p><%= @inquiry.desired_date %></p>
-		</div>
-	</div>
 
 		<%= link_to "Delete", inquiry_path(@inquiry), method: :delete, data: { confirm: "Are you sure?" } %>
+
+	<% else %>
+		
+		<p>You have no access to this page</p>
+
+	<% end %>
 
 </div>
 
