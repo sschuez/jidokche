@@ -22,7 +22,9 @@ class InquiriesController < ApplicationController
 
 			mail_2 = InquiryMailer.with(inquiry: @inquiry).admin_notification
 			mail_2.deliver_now
-			# redirect_to root_path
+			
+			flash[:notice] = "Ihre Nachricht wurde erfolgreich übermittelt."
+			redirect_to root_path
 		else
 			render :new
 		end	

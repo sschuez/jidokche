@@ -10,10 +10,14 @@
 
 <p><strong>Email: </strong><%= @inquiry.email %></p>  
 
-<p><strong>Zeitung: </strong><%= @inquiry.newspaper %></p>
+<% if @inquiry.name != nil %>
+	<p><strong>Name: </strong><%= @inquiry.name %></p>
+<% end %>
 
-<p><strong>Weitere Zeitung: </strong><%= @inquiry.other_newspaper %></p>
+<% if @inquiry.subject != nil %>
+	<p><strong>Betreff: </strong><%= @inquiry.subject %></p>
+<% end %>
 
-<p><strong>Gewünschtes Datum: </strong><%= @inquiry.desired_date %></p>
+<p><strong>Nachricht: </strong><%= @inquiry.content %></p>
 
 <%= link_to "Hier geht's zur zur Homepage", root_url %>

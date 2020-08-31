@@ -4,14 +4,18 @@
 	}
 </style>
 
-<p>Hallo <strong><%= @inquiry.email %></strong>,</p>
+<% if @inquiry.name != nil %>
+	<p>Hallo <strong><%= @inquiry.name %></strong>,</p>
+<% else %>
+	<p>Hallo <strong><%= @inquiry.email %></strong>,</p>
+<% end %>
 
-<p>Willkommen bei in-frieden.ch.</p>
+<p>Vielen Dank für Ihre Nachricht.</p>
 
-<p>Wir haben ihre Anfrage erhalten und sind momentan dabei, diese zu püfen. Wir werden so schnell wie möglich mit ihnen in Kontakt treten.</p>
+<p>Ich habe Ihre Anfrage erhalten und bin momentan dabei, diese zu püfen. Ich werde so schnell wie möglich mit Ihnen in Kontakt treten.</p>
 
-<p>Freundliche Grüsse,</p>
+<p>Liebe Grüsse,</p>
 
-<p>ihr in-frieden.ch Team</p>
+<p>Cornelia</p>
 
 <%= link_to "Hier geht's zurück zur Homepage", root_url %>

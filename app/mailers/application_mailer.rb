@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'info@in-frieden.ch'
+  default from: 'info@jidokche.com'
   layout 'mailer'
 end

@@ -4,7 +4,7 @@ class InquiryMailer < ApplicationMailer
     @inquiry = params[:inquiry]
     mail(
     	to: @inquiry.email, 
-    	subject: 'Ihre Anfrage bei in-frieden.ch'
+    	subject: 'Ihre Anfrage bei Ji Dok Che'
     	)
   end
 	
@@ -12,7 +12,8 @@ class InquiryMailer < ApplicationMailer
   	@inquiry = params[:inquiry]
   	mail(
   		to: 'stephen.schuez@gmail.com',
-  		subject: 'Neue Anfrage auf in-frieden.ch'
+      to: 'cornelia.schuez@gmail.com',
+  		subject: 'Neue Anfrage auf jidokche.com'
   		)
   end
 
