@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: $yellow-2;
+  color: $bright-orange-1;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,4 +12,16 @@
   width: 40px;
 }
 
+.navbar.navbar-expand-sm.navbar-light.navbar-lewagon a {
+	color: $bright-orange-1;
+}
 
+.navbar.navbar-expand-sm.navbar-light.navbar-lewagon a:hover {
+	color: $bright-orange-2;
+}
+
+.dropdown-menu.dropdown-menu-right {
+	background-color: $yellow-1;
+	border-radius: 5px;
+	border: 0.5px solid $bright-orange-1;
+}

@@ -26,14 +26,16 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> 
     <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-  <body class="bg-white">
+  <body>
     <%= render 'shared/google_tagmanager_noscript' %>
 
     <%= render 'shared/navbar' %>
     
     <%= render 'shared/flashes' %>
     
-    <%= yield %>
+    <div class="background-main">
+      <%= yield %>
+    </div>
 
     <%= render 'shared/footer' %>
     

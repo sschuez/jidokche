@@ -1,67 +1,8 @@
-<% name_pic = "flowers1.jpg" %>
-<% name_pic_1 = "flowers2.jpg" %>
+<div class="banner-div">
+	<h1>Willkommen bei Jidokche</h1>
+		
+	<i class="fas fa-om"></i>
 
-<!-- banner -->
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path(name_pic) %>');">
-  <div class="container">
-  		
-		<h1><strong>Ji Dok Che Yoga</strong></h1>
-		<br>
-		<p>Wir helfen Ihnen bei der Veröffentlichung ihres Nachrufs in ihrer Zeitung. Wir nehmen ihnen diesen Prozess ab, um sie in ihrer schwierigen Situation bestmöglich zu unterstützen</p>
-		<br>
-		<%= link_to "Anzeige schalten", new_inquiry_path, class: "btn btn-outline-light btn-lg px-5" %>
-
-  </div>
+	<p></p>
 </div>
-<!-- /banner -->
-
-<!-- cards -->
-<div class="container my-5">
-	<h2 class="text-center mb-3">Willkommen!</h2>
-	<p class="text-center mb-5">Unsere Mission ist es, den Prozess vom Publizieren einer Traueranzeige möglichst einfach und schmerzfrei zu gestalten. Durch unsere Partnerschaften mit Zeitungen und das Zusammenführen verschiedener Inserenten, erzielen wir für sie günstigere Preise, als wenn sie selbst einen Nachruf schalten würden.</p>
-	
-	<div class="card-deck text-center">
-	  <div class="card bg-transparent border-0 align-items-center">
-			<%= image_tag "exchange_none.webp", class: "card-img-top", style: "height: 100px; width: 100px;" %>
-			<div class="card-body">
-			  <h5 class="card-title">Abklärung</h5>
-			  <p class="card-text">Im ersten Schritt brauchen wir ein paar wenige Information: Welche Zeitung? Das gewünschte Datum sowie ihre Emailadresse. Sie erhalten unmittelbar Bescheid, ob die gwünschte Anzeige verfügbar ist.</p>
-			</div>
-	  </div>
-
-	  <div class="card bg-transparent border-0 align-items-center">
-			<%= image_tag "layout_none.webp", class: "card-img-top", style: "height: 100px; width: 100px;" %>
-			<div class="card-body">
-			  <h5 class="card-title">Gestaltung</h5>
-			  <p class="card-text">Wir zeigen Ihnen Vorlagen, die Sie zur Verfassung Ihrer Traueranzeige unterstützen können. Nach Vorgabe der Zeitung wird das Format automatisch passend gemacht.</p>
-			</div>
-	  </div>
-
-	  <div class="card bg-transparent border-0 align-items-center">
-			<%= image_tag "newspaper_none.webp", class: "card-img-top", style: "height: 100px; width: 100px;" %>
-			<div class="card-body">
-			  <h5 class="card-title">Publizierung</h5>
-			  <p class="card-text">Wir arbeiten mit den meisten Zeitungen in der Schweiz zusammen und können dadurch günstigere Preise anbieten, als wenn Sie direkt eine Anzeige schalten. Wir kümmern uns um die Publizierung.</p>
-			</div>
-	  </div>
-	</div>
-
-</div>
-<!-- /cards -->
-
-<!-- about -->
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path(name_pic_1) %>');">
-	<div class="container">
-		<h2 class="text-white"><strong>Schicken sie uns hier unverbindlich eine Anfrage zur Schaltung ihrer Traueranzeige</strong></h2>
-		<br>
-		<%= link_to "Anzeige schalten", new_inquiry_path, class: "btn btn-outline-light btn-lg px-5" %>
-	</div>
-
-</div>
-<!-- /about -->
-
-
-<!-- form -->
-<!-- /form -->
-
 
