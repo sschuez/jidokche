@@ -21,6 +21,16 @@ label {
 	background-color: $yellow-1;
 }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 330px;
+  gap: 0px 12px;
+  grid-template-areas:
+    "Card-1 Card-2 Card-3";
+  margin-top: 32px;
+}
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
