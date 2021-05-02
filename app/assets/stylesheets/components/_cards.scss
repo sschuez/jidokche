@@ -1,3 +1,40 @@
 .main-card {
-	background-color: red;
+	background-color: $yellow-2;
+	border-radius: 25px;
+	background-size: cover;
+	// border: 2px solid $bright-orange-1;
+	padding: 12px;
+	margin: 12px;
+	a {
+  	text-decoration: none;
+  }
+}
+
+.main-card:hover {
+	box-shadow: 0 0 6px $yellow-2;
+}
+
+.card-title {
+	position: relative;
+	margin-top: 34px;
+}
+
+.card-avatar {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -24px;
+}
+
+.ji {
+	background-color: #FBCA02;
+}
+
+
+.card-body {
+	p {
+		font-size: 16px;
+		color: #6f1d1b;
+	}
+	margin-top: 44px;
 }

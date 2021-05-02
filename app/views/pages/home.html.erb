@@ -1,21 +1,60 @@
 <div class="banner-div">
-	<h1>Willkommen bei Jidokche</h1>
-		
+	<h1>Jidokche</h1>
 	<i class="fas fa-om"></i>
-	<br><br>
-	<h2>Yogaschule</h2>
+	<h1>Yogaschule</h1>
+	<br>
 
 	<div class="cards-grid">
+		
 		<div class="main-card landing">
-			
+
+			<div class="card-title">
+				<h2>Yoga</h2>
+				<%= image_tag "lothus_small.png", class: "avatar-large card-avatar", alt: "avatar-large" %>
+			</div>
+			<div class="card-body">
+				<p><span style="font-weight: bold;">Stil</span></p>
+				<p>Hatha, Natha Yoga</p>				
+			</div>
+			<div class="card-link">
+				<%= link_to "Mehr", new_inquiry_path, class: "btn-ghost" %>
+			</div>
+
 		</div>
+
 		<div class="main-card landing">
 			
+			<div class="card-title">
+				<h2>f</h2>
+				<%= image_tag "avatar_small.png", class: "avatar-large card-avatar", alt: "avatar-large" %>
+			</div>
+			
+			<div class="card-body">
+				<p><span style="font-weight: bold;">Cornelia Schüz</span></p>
+				<p>Eig. Dipl. Yogalehrerin.</p>
+			</div>
+			<div class="card-link">
+				<%= link_to "Mehr", new_inquiry_path, class: "btn-ghost" %>
+			</div>
+
 		</div>
+
 		<div class="main-card landing">
 			
+			<div class="card-title">
+				<h2>f</h2>
+				<%= image_tag "ji_calligraphy.png", class: "avatar-large card-avatar ji", alt: "avatar-large" %>
+			</div>
+			<div class="card-body">
+				<p><span style="font-weight: bold;">Unterricht</span></p>
+				<p>Gruppenunterricht, Privatunterricht</p>
+			</div>
+			<div class="card-link">
+				<%= link_to "Mehr", new_inquiry_path, class: "btn-ghost" %>
+			</div>
 		</div>
 
 	</div>
+
 </div>
 
