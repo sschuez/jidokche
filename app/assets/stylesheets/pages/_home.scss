@@ -24,10 +24,6 @@ label {
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 330px;
-  gap: 0px 34px;
-  grid-template-areas:
-    "Card-1 Card-2 Card-3";
   margin-top: 55px;
 }
 
@@ -37,12 +33,20 @@ label {
   .background-main {
   	padding: 12px; 
   }
+  .cards-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .background-main {
   	padding: 24px; 
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 
@@ -51,6 +55,10 @@ label {
   .background-main {
   	padding: 36px; 
   }
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 6px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -58,11 +66,19 @@ label {
   .background-main {
   	padding: 48px; 
   }
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 34px;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .background-main {
   	padding: 64px; 
+  }
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 70px;
   }
 }
