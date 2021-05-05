@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'contact', to: 'pages#contact', as: :contact
   get 'articles', to: 'pages#articles', as: :articles
+  get 'unterricht', to: 'pages#unterricht', as: :unterricht
+  get 'stil', to: 'pages#stil', as: :stil
   
   # MAUAL ROUTES NOT REQUIRED
   # get 'inquiries', to: 'inquiries#index', as: :inquiries
